@@ -12,8 +12,8 @@ import org.slf4j.LoggerFactory;
 public class QuotationScheduler {
 
     private final Logger LOG = LoggerFactory.getLogger(QuotationScheduler.class);
-
-    @Inject
+    
+	@Inject
     QuotationService quotationService;
 
     @Transactional
