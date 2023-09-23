@@ -5,11 +5,13 @@ import br.com.mineradora.dto.ProposalDetailsDTO;
 import br.com.mineradora.entity.ProposalEntity;
 import br.com.mineradora.message.KafkaEvent;
 import br.com.mineradora.repository.ProposalRepository;
+import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
 
 import java.util.Date;
 
+@ApplicationScoped
 public class ProposalServiceImpl implements ProposalService{
 
     @Inject
@@ -46,7 +48,6 @@ public class ProposalServiceImpl implements ProposalService{
         proposalRepository.deleteById(id);
     }
 
-    @Transactional
     private ProposalDTO buildAndSaveNewProposal(ProposalDetailsDTO proposalDetailsDTO) {
         try {
             ProposalEntity proposal = new ProposalEntity();
