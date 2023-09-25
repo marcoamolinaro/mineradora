@@ -16,6 +16,8 @@ public class OpportunityEntity {
     @GeneratedValue
     private Long id;
     private Date date;
+    @Column(name = "proposal_id")
+    private Long proposalId;
     private String customer;
     @Column(name = "price_tonne")
     private BigDecimal priceTonne;

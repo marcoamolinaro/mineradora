@@ -1,5 +1,6 @@
 package br.com.mineradora.util;
 
+import br.com.mineradora.dto.OpportunityDTO;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
 
