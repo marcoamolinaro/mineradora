@@ -10,6 +10,7 @@ import br.com.mineradora.repository.QuotationRepository;
 import br.com.mineradora.util.CSVHelper;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
+import jakarta.transaction.Transactional;
 
 import java.io.ByteArrayInputStream;
 import java.util.ArrayList;
@@ -36,14 +37,21 @@ public class OpportunityServiceImpl implements OpportunityService {
         opportunity.setDate(new Date());
         opportunity.setCustomer(proposal.getCustomer());
         opportunity.setPriceTonne(proposal.getPriceTonne());
+        opportunity.setProposalId(proposal.getProposalId());
         opportunity.setLastDollarQuotation(quotationEntities.get(0).getCurrencyPrice());
 
         opportunityRepository.persist(opportunity);
     }
 
     @Override
+    @Transactional
     public void saveQuotation(QuotationDTO quotation) {
+        QuotationEntity createQuotation = new QuotationEntity();
 
+        createQuotation.setDate(new Date());
+        createQuotation.setCurrencyPrice(quotation.getCurrencyPrice());
+
+        quotationRepository.persist(createQuotation);
     }
 
     @Override
