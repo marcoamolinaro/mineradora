@@ -17,8 +17,8 @@ import java.util.List;
 @ApplicationScoped
 public class QuotationService {
 
-    @Inject
     @RestClient
+    @Inject
     CurrencyPriceClient currencyPriceClient;
 
     @Inject

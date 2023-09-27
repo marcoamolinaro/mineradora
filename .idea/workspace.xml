@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0126f15-26bf-4468-9c92-eceae2ee7447" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/report/src/main/java/br/com/mineradora/service/OpportunityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/report/src/main/java/br/com/mineradora/service/OpportunityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/src/main/java/br/com/mineradora/util/CSVHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/report/src/main/java/br/com/mineradora/util/CSVHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cotacao/src/main/java/br/com/mineradora/service/QuotationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cotacao/src/main/java/br/com/mineradora/service/QuotationService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,15 +27,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Desenvolvedor/Udemy/Quarkus_Framework_Microservicos_com_Kafka/mineradora&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Desenvolvedor/Udemy/Quarkus_Framework_Microservicos_com_Kafka/mineradora",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
