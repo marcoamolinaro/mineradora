@@ -68,6 +68,14 @@
       <version>1.18.28</version>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-oidc</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-oidc-token-propagation-reactive</artifactId>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
