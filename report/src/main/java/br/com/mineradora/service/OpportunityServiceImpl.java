@@ -53,13 +53,13 @@ public class OpportunityServiceImpl implements OpportunityService {
     }
 
     @Override
-    public List<OpportunityDTO> generateOpportunityData() {]
+    public List<OpportunityDTO> generateOpportunityData() {
         List<OpportunityDTO> opportunities = new ArrayList<>();
 
         opportunityRepository
                 .findAll()
                 .stream()
-                .forEach(item-> {oportunities.add(OpportunityDTO
+                .forEach(item-> {opportunities.add(OpportunityDTO
                         .builder()
                         .proposalId(item.getProposalId())
                         .priceTonne(item.getPriceTonne())
