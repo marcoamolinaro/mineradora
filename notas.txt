@@ -1,0 +1,9 @@
+docker run -p 5432:5432 -e POSTGRES_PASSWORD=1234 postgres
+
+@RegisterRestClient(baseUri="https://economia.awesomeapi.com.br")
+
+docker system prune -af
+
+docker run -p 8180:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:22.0.3 start-dev
+
+security-keycloak-authorization-quickstart/config/quarkus-realm.json
